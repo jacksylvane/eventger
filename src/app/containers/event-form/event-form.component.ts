@@ -16,7 +16,7 @@ export class EventFormComponent implements OnInit {
     private fb: FormBuilder,
     private _store: Store<IAppState>
     ) {
-    this.eventForm = fb.group({
+    this.eventForm = this.fb.group({
       eventName: [null, Validators.required],
       id: null,
       owner: [null, Validators.required]
