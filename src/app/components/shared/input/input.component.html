@@ -1,0 +1,3 @@
+<!-- <input type="text" [placeholder]="placeholder" (change)="emitValueChange($event)"> -->
+  <label>{{ label }}</label>
+  <input [ngModel]="value" (ngModelChange)="valueChanged($event)" (blur)="onBlur()" [type]="type" [placeholder]="placeholder" [disabled]="disabled">

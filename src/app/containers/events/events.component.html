@@ -1,0 +1,1 @@
+<app-events [futureEvents]="futureEvents$ | async" [ongoingEvents]="ongoingEvents$ | async" [pastEvents]="pastEvents$ | async" (deleteEvent)="deleteEvent($event)" (editEvent)="dispatchEdit($event)"></app-events>

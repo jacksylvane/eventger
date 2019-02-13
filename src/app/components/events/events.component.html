@@ -1,0 +1,26 @@
+<div class="events">
+  <h3>Past Events</h3>
+  <div *ngFor="let event of pastEvents" class="event">
+    <span>{{ event.name }} by {{event.owner}}</span>
+    <span>Date: {{event.startDate | date:'d.M, HH:mm'}}</span>
+    <span>Duration: {{event.durationMinutes | duration }}</span>
+    <app-button buttonAction="Delete" (buttonClicked)="emitButtonClicked(event.id)"></app-button>
+    <app-button buttonAction="Edit" (buttonClicked)="emitEditButtonClicked(event)"></app-button>
+  </div>
+  <h3>Ongoing Events</h3>
+  <div *ngFor="let event of ongoingEvents" class="event">
+    <span>{{ event.name }} by {{event.owner}}</span>
+    <span>Date: {{event.startDate | date:'d.M, HH:mm'}}</span>
+    <span>Duration: {{event.durationMinutes | duration }}</span>
+    <app-button buttonAction="Delete" (buttonClicked)="emitButtonClicked(event.id)"></app-button>
+    <app-button buttonAction="Edit" (buttonClicked)="emitEditButtonClicked(event)"></app-button>
+  </div>
+  <h3>Future Events</h3>
+  <div *ngFor="let event of futureEvents" class="event">
+    <span>{{ event.name }} by {{event.owner}}</span>
+    <span>Date: {{event.startDate | date:'d.M, HH:mm'}}</span>
+    <span>Duration: {{event.durationMinutes | duration }}</span>
+    <app-button buttonAction="Delete" (buttonClicked)="emitButtonClicked(event.id)"></app-button>
+    <app-button buttonAction="Edit" (buttonClicked)="emitEditButtonClicked(event)"></app-button>
+  </div>
+</div>

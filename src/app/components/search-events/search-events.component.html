@@ -1,0 +1,10 @@
+<input [(ngModel)]="searchText" (ngModelChange)="isTextAreaEmpty()" placeholder="Search for a week number">
+<ul *ngIf="showResult">
+  <li *ngFor="let event of events | search : searchText">
+    <div>
+      <p *ngIf="log != -1">Week</p>
+      <p>{{log.week}}</p>
+      <p *ngIf="log == -1"> No entry found </p>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,49 @@
+{
+  "events": [
+      {
+      "id": 1,
+      "name": "Angular Meetup",
+      "owner": "Google Developers",
+      "startDate": 1546707600000,
+      "durationMinutes": 100,
+      "address": {
+        "street": "Main Boulevard",
+        "number": "5",
+        "zipcode": "500210",
+        "city": "San Diego",
+        "country": "USA"
+      },
+      "description": "Come and enjoy a great evening with Angular. This month we are very grateful to a local bar The Bar for hosting us."
+    },
+    {
+      "id": 2,
+      "name": "React Meetup",
+      "owner": "Random Dudes",
+      "startDate": 1549827000000,
+      "durationMinutes": 12000,
+      "address": {
+        "street": "Main Boulevard",
+        "number": "5",
+        "zipcode": "500210",
+        "city": "San Diego",
+        "country": "USA"
+      },
+      "description": "Come and enjoy a great evening with Angular. This month we are very grateful to a local bar The Bar for hosting us."
+    },
+    {
+      "id": 3,
+      "name": "Vue Meetup",
+      "owner": "Friends of Vue",
+      "startDate": 1558112400000,
+      "durationMinutes": 120,
+      "address": {
+        "street": "Main Boulevard",
+        "number": "5",
+        "zipcode": "500210",
+        "city": "San Diego",
+        "country": "USA"
+      },
+      "description": "Come and enjoy a great evening with Angular. This month we are very grateful to a local bar The Bar for hosting us."
+    }
+  ]
+}

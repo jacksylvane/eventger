@@ -1,10 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.sass'],
+  templateUrl: './app.component.html'
 })
-export class AppComponent {
-  title = 'eventger';
+export class AppComponent implements OnInit {
+  title = 'angular-ngrx';
+
+  constructor() {}
+
+  ngOnInit() {
+  }
 }

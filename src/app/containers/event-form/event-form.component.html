@@ -1,0 +1,5 @@
+<form [formGroup]=eventForm>
+  <app-input label="Event name" formControlName="eventName"></app-input>
+  <app-input label="Owner" formControlName="owner"></app-input>
+  <app-button buttonAction="Save" (buttonClicked)="saveForm()"></app-button>
+</form>
